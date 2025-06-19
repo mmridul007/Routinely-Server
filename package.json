@@ -1,0 +1,14 @@
+{
+  "name": "routinely-server",
+  "version": "1.0.0",
+  "description": "It's a backend server of maintaining routinely's users operations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "MD. MOSTAK AHAMED MRIDUL",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
