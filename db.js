@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
-require("dotenv").config();
-
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 const MONGODB_OFFLINE_URL = process.env.MONGODB_OFFLINE;
 
 mongoose.connect(MONGODB_OFFLINE_URL, {
@@ -18,8 +18,8 @@ db.on("error", () => {
   console.log("MongoDB Connection Error");
 });
 
-db.on("disconnected", ()=>{
-    console.log("MongoDB Connection Disconnected")
-})
+db.on("disconnected", () => {
+  console.log("MongoDB Connection Disconnected");
+});
 
-module.exports = db;
+export default db;
